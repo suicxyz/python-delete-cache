@@ -17,7 +17,7 @@ Then to run it, execute the followin command in the terminal:
 $ auto-py-to-exe
 ```
 
-### Installing via GitHub
+### Installing via [GitHub](https://github.com/brentvollebregt/auto-py-to-exe)
 
 ![](https://warehouse-camo.ingress.cmh1.psfhosted.org/0c90ebcf535ccfa430b4cd278698da05e855f69e/68747470733a2f2f6e6974726174696e652e6e65742f706f7374732f6175746f2d70792d746f2d6578652f6175746f2d70792d746f2d6578652d64656d6f2e676966)
 
@@ -33,11 +33,11 @@ Then to run it, execute the following in the terminal:
 $ auto-py-to-exe
 ```
 
-#### Running Locally Via Github (no install)
+#### Running Locally Via [Github](https://github.com/brentvollebregt/auto-py-to-exe) (no install)
 
 You can run this project locally by following these steps:
 
-1. Clone/download the repo
+1. Clone/download the [repo](https://github.com/brentvollebregt/auto-py-to-exe)
 2. Open cmd/terminal and cd into the project
 3. Execute `python -m pip install -r requirements.txt`
 
