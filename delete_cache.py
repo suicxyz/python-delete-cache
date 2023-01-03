@@ -1,6 +1,7 @@
 import pathlib
 import shutil
 import os, ctypes
+import time
 
 def verify_admin():
 	try:
@@ -32,10 +33,14 @@ def delete_files_and_dirs(path):
 
 			print(f"Deleting file: \"{file}\"")
 
+def exec(drive, user):
+    delete_files_and_dirs(f"{drive}/Windows/Temp/")
+    delete_files_and_dirs(f"{drive}/Windows/Prefetch/")
+    delete_files_and_dirs(f"{drive}/Users/{user}/AppData/Local/Temp/")
+
 verify_admin()
 
-drive = pathlib.Path.home().drive
-
-delete_files_and_dirs(f"{drive}/Windows/Temp/")
-delete_files_and_dirs(f"{drive}/Windows/Prefetch/")
-delete_files_and_dirs(f"{drive}/Users/vinit/AppData/Local/Temp/")
+while (True):
+    exec(pathlib.Path.home().drive, os.path.expanduser("~").split("\\")[-1])
+    print("Done.")
+    time.sleep((1 * 60 * 60) * 6)
